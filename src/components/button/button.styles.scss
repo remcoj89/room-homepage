@@ -1,0 +1,19 @@
+@use '../../assets/styling/abstracts/' as *;
+
+.btn{
+  cursor: pointer;
+  border: none;
+  border-radius: none;
+  background-color: transparent;
+}
+
+.heroButton {
+  letter-spacing: 1.25rem;
+  line-height: 1.6;
+  font-size: 1.5rem;
+  color: $color-black;
+
+  &:hover{
+    color: $color-dark-gray;
+  }
+}

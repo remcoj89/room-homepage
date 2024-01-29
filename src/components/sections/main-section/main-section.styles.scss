@@ -1,0 +1,22 @@
+@use '../../../assets/styling/abstracts/' as *;
+@use '../../../assets/styling/base/' as *;
+
+aside {
+  padding: 6em 3em;
+
+  h2{
+    margin-bottom: 1.8rem;
+    font-size:clamp(3rem, 30vw + 14px, 4rem);
+    font-weight: 600;
+    letter-spacing: -1.67px;
+  }
+
+  p{
+    margin-bottom: 2.4em;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: $color-dark-gray;
+    letter-spacing: -0.33px;
+    line-height: 2.2;
+  }
+}

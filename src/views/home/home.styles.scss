@@ -1,0 +1,10 @@
+@use '../../assets/styling/abstracts/' as *;
+
+main{
+  display: grid;
+  grid-template-columns: 1fr;
+  @media (min-width: $sw-mobile) {
+    grid-template-columns: repeat(2, 50%);
+    height:45vh;
+  }
+}
