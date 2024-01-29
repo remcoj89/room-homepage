@@ -1,0 +1,38 @@
+@use '../../../assets/styling/abstracts/' as *;
+
+.about-section {
+  display: grid;
+  align-items: center;
+  align-items: stretch;
+
+  &-content{
+    height: 100%;
+    margin: auto 1.8rem;
+    padding: 2.4rem 0;
+
+    &--title {
+      @include font-style-about-section-title;
+      margin-bottom: 1.8rem
+    }
+
+    &--paragraph {
+      @include font-style-paragraph;
+    }
+  }
+
+  &--image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (min-width: $sw-mobile) {
+    grid-template-columns: repeat(3, 1fr);
+
+    &-content{
+      height: 80%;
+      margin: auto 3.8rem;
+    }
+
+  }
+}

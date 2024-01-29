@@ -2,7 +2,7 @@
 @use '../../../assets/styling/base/' as *;
 
 aside {
-  padding: 6em 3em;
+  padding: 6em 10%;
 
   h2{
     margin-bottom: 1.8rem;
@@ -12,11 +12,6 @@ aside {
   }
 
   p{
-    margin-bottom: 2.4em;
-    font-weight: 500;
-    font-size: 1.6rem;
-    color: $color-dark-gray;
-    letter-spacing: -0.33px;
-    line-height: 2.2;
+    @include font-style-paragraph
   }
 }

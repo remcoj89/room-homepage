@@ -2,6 +2,7 @@ import './button.styles.scss';
 
 const BUTTON_TYPE_CLASSES = {
   heroButton: 'heroButton',
+  angleButton: 'angle-btn'
 };
 
 const Button = ({children, buttonType}) => {
