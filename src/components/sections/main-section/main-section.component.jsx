@@ -4,6 +4,7 @@ import './main-section.styles.scss';
 // Import Contexts
 import { useContext } from 'react';
 import { appScreenWidthContext } from '../../../contexts/screen-size-context/screen-size-context';
+import { appDataContext } from '../../../contexts/data-context/data-context';
 
 // Elements
 import IconArrow from '../../../assets/icons/icon-arrow.component';
@@ -13,6 +14,13 @@ import ButtonContainer from '../../buttons-container/buttons-container.component
 
 const MainSection = () => {
 const { screenWidth } = useContext(appScreenWidthContext)
+const { slideContent } = useContext(appDataContext)
+if(!slideContent) {
+  return;
+}
+
+const {title, description} = slideContent
+
 const postion = {
   bottom: 0,
   left: 0
@@ -20,8 +28,8 @@ const postion = {
 
   return (
     <aside>
-      <h2>Discover innovatiove ways to decorate</h2>
-      <p>We provide unmatched quality, confort and style for property owners across the country. Our experts combine rom and function in bringin your vision to life. Create a room in your own style with our collection and make your propperty a reflection of you and what you love.</p>
+      <h2>{title}</h2>
+      <p>{description}</p>
       <Button buttonType={'heroButton'}>Shop Now <IconArrow/></Button>
       { screenWidth >= 375 && <ButtonContainer postion={postion} /> }
     </aside>

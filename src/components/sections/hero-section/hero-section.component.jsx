@@ -10,16 +10,25 @@ import ButtonsContainer from '../../buttons-container/buttons-container.componen
 
 // Import Context
 import { appScreenWidthContext }  from '../../../contexts/screen-size-context/screen-size-context';
+import { appDataContext } from '../../../contexts/data-context/data-context';
 
 export default function HeroSection() {
   const {screenWidth} = useContext(appScreenWidthContext)
+  const { slideContent } = useContext(appDataContext)
+  if(!slideContent) {
+    return;
+  }
+  const {imageDesktop, imageMobile} = slideContent
+
   const postion = {
     bottom: 0,
     right: 0
   }
 
   return(
-    <header>
+    <header style={{
+      backgroundImage: `url(${screenWidth < 375 ? imageMobile : imageDesktop})`
+    }}>
       <NavigationBar />
       {screenWidth <375 && <ButtonsContainer postion={postion} />}
     </header>

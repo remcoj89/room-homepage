@@ -1,6 +1,8 @@
+// Import styles
 import './about-section.styles.scss';
 
 const AboutSection = () => {
+
   return (
     <div className="about-section">
       <img className='about-section--image' src="src/assets/images/about/image-about-dark.jpg" alt="Room Homepage" />

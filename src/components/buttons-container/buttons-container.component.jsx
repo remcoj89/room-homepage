@@ -2,18 +2,20 @@
 // Importing Styleheet
 import './buttons-container.styles.scss';
 
+
 // Importing Components
 import Button from '../../components/button/button.component';
 import IconAngleLeft from '../../assets/icons/icon-angle-left.component';
 import IconAngleRigth from '../../assets/icons/icon-angle-right.component';
 
 const ButtonsContainer = (props) => {
-  const {postion} = props
+  const {postion} = props;
+
   return (
     <div className="angle-btns" style={postion}>
-    <Button buttonType={'angleButton'}><IconAngleLeft/></Button>
-    <Button buttonType={'angleButton'}><IconAngleRigth/></Button>
-  </div>
+      <Button buttonType={'angleButton'} direction = {'left'}><IconAngleLeft/></Button>
+      <Button buttonType={'angleButton'} direction = {'right'}><IconAngleRigth/></Button>
+    </div>
   )
 }
 
