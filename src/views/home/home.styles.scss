@@ -4,11 +4,7 @@ main{
   display: grid;
   grid-template-columns: 1fr;
   position: relative;
-
-  .angle-btns {
-    position: absolute;
-    bottom: 0;
-  }
+  grid-auto-rows: minmax(45vh, auto);
 
   @media (min-width: $sw-mobile) {
     grid-template-columns: repeat(2, 50%);

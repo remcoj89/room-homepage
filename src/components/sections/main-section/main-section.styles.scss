@@ -3,7 +3,8 @@
 
 aside {
   padding: 6em 10%;
-
+  position: relative;
+  
   h2{
     margin-bottom: 1.8rem;
     font-size:clamp(3rem, 30vw + 14px, 4rem);
