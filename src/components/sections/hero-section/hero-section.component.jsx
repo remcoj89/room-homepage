@@ -5,7 +5,8 @@ import './hero-section.styles.scss';
 import { useContext } from 'react';
 
 // Import Components
-import NavigationBar from '../../navigation/navigation.component';
+import MobileNavigationBar from '../../mobile-navigation/mobile-navigation.component';
+import DesktopNavigationBar from '../../desktop-navigation/desktop-navigation.component';
 import ButtonsContainer from '../../buttons-container/buttons-container.component';
 
 // Import Context
@@ -29,7 +30,7 @@ export default function HeroSection() {
     <header style={{
       backgroundImage: `url(${screenWidth < 375 ? imageMobile : imageDesktop})`
     }}>
-      <NavigationBar />
+      {screenWidth < 375 ? <MobileNavigationBar /> : <DesktopNavigationBar />}
       {screenWidth <375 && <ButtonsContainer postion={postion} />}
     </header>
   )

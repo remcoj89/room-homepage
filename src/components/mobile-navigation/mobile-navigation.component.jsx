@@ -1,5 +1,5 @@
 // Importing Styling
-import './navigation.styles.scss';
+import './mobile-navigation.styles.scss';
 
 // Importing React hook(s)
 import { useState } from 'react';
@@ -34,11 +34,11 @@ export default function NavigationBar() {
           </div>
         }
 
-      <ul className={ navMenuIsOpen ? 'navigation-links nav-links-dark' : 'navigation-links nav-links-white'}>
-        <li className='navigation-link' onClick={handleNavLink}>home</li>
-        <li className='navigation-link' onClick={handleNavLink}>shop</li>
-        <li className='navigation-link' onClick={handleNavLink}>about</li>
-        <li className='navigation-link' onClick={handleNavLink}>contact</li>
+      <ul className={ navMenuIsOpen ? 'mobile-navigation-links nav-links-dark' : 'navigation-links nav-links-white'}>
+        <li className='mobile-navigation-link' onClick={handleNavLink}>home</li>
+        <li className='mobile-navigation-link' onClick={handleNavLink}>shop</li>
+        <li className='mobile-navigation-link' onClick={handleNavLink}>about</li>
+        <li className='mobile-navigation-link' onClick={handleNavLink}>contact</li>
       </ul>
     </nav>
   )
