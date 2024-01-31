@@ -28,9 +28,11 @@ const postion = {
 
   return (
     <aside>
-      <h2>{title}</h2>
-      <p>{description}</p>
-      <Button buttonType={'heroButton'}>Shop Now <IconArrow/></Button>
+      <div className="aside-content">
+        <h2>{title}</h2>
+        <p>{description}</p>
+        <Button buttonType={'heroButton'}>Shop Now <IconArrow/></Button>
+      </div>
       { screenWidth >= screenBreakPoint && <ButtonContainer postion={postion} /> }
     </aside>
   )
