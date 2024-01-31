@@ -14,7 +14,7 @@ import { appScreenWidthContext }  from '../../../contexts/screen-size-context/sc
 import { appDataContext } from '../../../contexts/data-context/data-context';
 
 export default function HeroSection() {
-  const {screenWidth} = useContext(appScreenWidthContext)
+  const {screenWidth, screenBreakPoint} = useContext(appScreenWidthContext)
   const { slideContent } = useContext(appDataContext)
   if(!slideContent) {
     return;
@@ -28,10 +28,10 @@ export default function HeroSection() {
 
   return(
     <header style={{
-      backgroundImage: `url(${screenWidth < 375 ? imageMobile : imageDesktop})`
+      backgroundImage: `url(${screenWidth < screenBreakPoint ? imageMobile : imageDesktop})`
     }}>
-      {screenWidth < 375 ? <MobileNavigationBar /> : <DesktopNavigationBar />}
-      {screenWidth <375 && <ButtonsContainer postion={postion} />}
+      {screenWidth < screenBreakPoint ? <MobileNavigationBar /> : <DesktopNavigationBar />}
+      {screenWidth < screenBreakPoint && <ButtonsContainer postion={postion} />}
     </header>
   )
 }

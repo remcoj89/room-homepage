@@ -13,7 +13,7 @@ import ButtonContainer from '../../buttons-container/buttons-container.component
 
 
 const MainSection = () => {
-const { screenWidth } = useContext(appScreenWidthContext)
+const { screenWidth, screenBreakPoint } = useContext(appScreenWidthContext)
 const { slideContent } = useContext(appDataContext)
 if(!slideContent) {
   return;
@@ -31,7 +31,7 @@ const postion = {
       <h2>{title}</h2>
       <p>{description}</p>
       <Button buttonType={'heroButton'}>Shop Now <IconArrow/></Button>
-      { screenWidth >= 375 && <ButtonContainer postion={postion} /> }
+      { screenWidth >= screenBreakPoint && <ButtonContainer postion={postion} /> }
     </aside>
   )
 }

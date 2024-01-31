@@ -2,12 +2,10 @@
 
 header{
   position: relative;
-  // background-image: url('../../../assets/images/mobile/mobile-image-hero-1.jpg');
   background-size: cover;
-  height: 100%;
+  background-position: center;
 
   @media (min-width: $sw-mobile) {
-    // background-image: url('../../../assets/images/desktop/desktop-image-hero-1.jpg');
     background-position: center;
     height: 100%;
   }

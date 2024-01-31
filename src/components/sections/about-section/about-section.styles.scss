@@ -3,11 +3,10 @@
 .about-section {
   display: grid;
   align-items: center;
-  align-items: stretch;
+  grid-auto-rows: minmax(30vh, 50vh);
 
   &-content{
-    height: 100%;
-    margin: auto 1.8rem;
+    margin: auto 5vw;
     padding: 2.4rem 0;
 
     &--title {
@@ -33,6 +32,5 @@
       height: 80%;
       margin: auto 3.8rem;
     }
-
   }
 }

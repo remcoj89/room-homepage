@@ -1,6 +1,6 @@
 @use '../../assets/styling/abstracts' as *;
 
-.nav {
+.mobile-navigation {
   display: flex;
   justify-content: space-between;
   padding: 10% 5%;
@@ -12,36 +12,16 @@
     width: 40%;
   }
 
-  .navigation-links {
+  .mobile-navigation-links {
     font-size: 1.8rem;
-    color: $color-white;
+    color: $color-black;
     list-style: none;
     width: 70%;
     cursor: pointer;
-
-    @media (min-width: $sw-mobile) {
-      display: flex;
-      justify-content: space-evenly;
-    }
-  }
-
-  .nav-links-dark {
-    color: $color-black;
     display: flex;
-    justify-content: space-between;
-
-    .navigation-link {
-
-      &:hover {
-        color: $color-dark-gray
-      }
-    }
+    justify-content: space-evenly;
   }
 
-  .nav-links-white {
-    color: $color-white;
-    display: none;
-  }
 
   #logo-container {
     position: relative;
@@ -56,11 +36,11 @@
   }
 }
 
-.nav-open{
+.mobile-navigation-open{
   background-color: $color-white;
 }
 
-.nav-closed{
+.mobile-navigation-closed{
   background-color: none;
 }
 

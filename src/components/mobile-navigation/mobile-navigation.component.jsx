@@ -21,25 +21,28 @@ export default function NavigationBar() {
   }
 
   return (
-    <nav className={ navMenuIsOpen ? 'nav nav-open' : 'nav nav-closed'}>
-        <div id="burger-menu" onClick={handleToggleNavMenu}>
-          { navMenuIsOpen ? <Close /> : <BurgerMenu /> }
-        </div>
-        {
-          navMenuIsOpen ? "" :
-          <div id="logo-container">
-            <div id="logo">
-              <Logo />
-            </div>
+    <nav className={ navMenuIsOpen ? 'mobile-navigation mobile-navigation-open' : 'mobile-navigation mobile-navigation-closed'}>
+      <div id="burger-menu" onClick={handleToggleNavMenu}>
+        { navMenuIsOpen ? <Close /> : <BurgerMenu /> }
+      </div>
+      {
+        navMenuIsOpen ? "" :
+        <div id="logo-container">
+          <div id="logo">
+            <Logo />
           </div>
-        }
+        </div>
+      }
 
-      <ul className={ navMenuIsOpen ? 'mobile-navigation-links nav-links-dark' : 'navigation-links nav-links-white'}>
-        <li className='mobile-navigation-link' onClick={handleNavLink}>home</li>
-        <li className='mobile-navigation-link' onClick={handleNavLink}>shop</li>
-        <li className='mobile-navigation-link' onClick={handleNavLink}>about</li>
-        <li className='mobile-navigation-link' onClick={handleNavLink}>contact</li>
-      </ul>
+      {
+        navMenuIsOpen &&
+        <ul className='mobile-navigation-links'>
+          <li className='mobile-navigation-link' onClick={handleNavLink}>home</li>
+          <li className='mobile-navigation-link' onClick={handleNavLink}>shop</li>
+          <li className='mobile-navigation-link' onClick={handleNavLink}>about</li>
+          <li className='mobile-navigation-link' onClick={handleNavLink}>contact</li>
+        </ul>
+      }
     </nav>
   )
 }

@@ -4,7 +4,7 @@ main{
   display: grid;
   grid-template-columns: 1fr;
   position: relative;
-  grid-auto-rows: 70vh;
+  grid-auto-rows: minmax(50vh, 70vh);
 
   @media (min-width: $sw-mobile) {
     grid-template-columns: repeat(2, 50%);
