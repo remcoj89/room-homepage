@@ -1,6 +1,8 @@
 @use '../../assets/styling/abstracts' as *;
 
 .mobile-navigation {
+  position: sticky;
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   padding: 10% 5%;
