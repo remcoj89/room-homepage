@@ -4,9 +4,9 @@ main{
   display: grid;
   grid-template-columns: 1fr;
   position: relative;
-  grid-auto-rows: minmax(50vh, 60vh);
 
   @media (min-width: $sw-mobile) {
     grid-template-columns: repeat(2, 50%);
+    grid-auto-rows: 60vh;
   }
 }

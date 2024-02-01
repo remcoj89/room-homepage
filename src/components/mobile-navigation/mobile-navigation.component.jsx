@@ -6,7 +6,7 @@ import { useContext } from 'react';
 import { appNavModalContext } from '../../contexts/nav-modal-context/nav-modal-context';
 
 // Importing Components
-import Logo from '../../assets/images/others/logo.component';
+import Logo from '../../assets/icons/logo.component';
 import BurgerMenu from '../../assets/icons/icon-hamburger.component';
 import Close from '../../assets/icons/icon-close.component';
 

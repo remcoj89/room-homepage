@@ -4,6 +4,7 @@ header{
   position: relative;
   background-size: cover;
   background-position: center;
+  height: 60vh;
 
   @media (min-width: $sw-mobile) {
     background-position: center;

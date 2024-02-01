@@ -3,7 +3,7 @@ import './desktop-navigation.styles.scss';
 
 
 // Importing Components
-import Logo from '../../assets/images/others/logo.component';
+import Logo from '../../assets/icons/logo.component';
 
 const DesktopNavigationBar = () => {
   return (
