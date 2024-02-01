@@ -14,7 +14,6 @@ This is a solution to the [Room homepage challenge on Frontend Mentor](https://w
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -30,22 +29,29 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./desktop.jpg)
+![](./mobile-1.jpg)
+![](./mobile-2.jpg)
+![](./mobile-3.jpg)
+![](./mobile-4.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github repository](https://github.com/remcoj89/room-homepage)
+- Live Site URL: [Deployed on Vercel](https://room-homepage-pearl-nine.vercel.app/)
 
 ## My process
+
+ 1. Figuring out the structure of the design how is it build op. What components belong to gether and thinkig of where i want to use flex-box or grid and desided to start with the mobile first approache
+ 2. Setting-up the development folder by installing react with vite, sass, and removing the default components with there styling to start from a clean slate.
+ 3. Creating the scss 7-1 folder structure, reseting the css default settings, creating variables and mixins based on the given stylesheet.
+ 4. Build the first Section called HeroSection this section contains the: Navigation-bar, Hero-Image and the Hero content.
+ 5. Build the About section.
+ 6. Build the .button-container this container includes the left and right button to navigate in the HeroSection. Also manipulating the state by using the useContext Hook.
+ 7. Created a data.json file with the HeroSection Data and a ContextProvider to manage the data.
+ 8. fixing all the styling problems that are left and try to optimize the responsivenes of the page.
+ 9. Bringing the App in production Using Vercel.
+ 10. Test if the app works how it supposed to do and fix the possible errors
 
 ### Built with
 
@@ -82,7 +88,7 @@ I also want to improve my (s)css skill to create a more pixle perfect web applic
 ## Author
 
 - Website - [Remco Jonk](https://www.remcojonk.nl)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/remcoj89)
 
 
 ## Acknowledgments
